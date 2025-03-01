@@ -1,0 +1,18 @@
+[package]
+name = "fluvio-sink-connector-clickhose"
+version = "0.1.0"
+authors = ["jack-r-hong <saqwxz06@gmail.com>"]
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+futures = { version = "0.3", default-features = false }
+serde = { version = "1.0", default-features = false, features = ["derive"]}
+
+fluvio = { git = "https://github.com/infinyon/fluvio", rev = "e55f11c43c4a9895b7b681718d0c117cef7d095d" }
+fluvio-connector-common = { git = "https://github.com/infinyon/fluvio", rev = "e55f11c43c4a9895b7b681718d0c117cef7d095d", features = ["derive"] }
+clickhouse = "0.12.2"
+
+[dev-dependencies]
+clickhouse = { version = "0.12.2", features = ["test-util"] }

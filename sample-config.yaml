@@ -1,0 +1,8 @@
+apiVersion: 0.1.0
+meta:
+  version: 0.1.0
+  name: my-fluvio-sink-connector-clickhose-test-connector
+  type: fluvio-sink-connector-clickhose-sink
+  topic: test-fluvio-sink-connector-clickhose-topic
+custom:
+  foo: bar

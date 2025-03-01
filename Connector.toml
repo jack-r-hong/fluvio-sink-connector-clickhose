@@ -1,0 +1,20 @@
+[package]
+name = "fluvio-sink-connector-clickhose"
+group = "jack-r-hong"
+version = "0.1.0"
+apiVersion = "0.1.0"
+fluvio = "0.10.0"
+description = ""
+license = "Apache-2.0"
+visibility = "public"
+
+[direction]
+sink = true
+
+[deployment]
+binary = "fluvio-sink-connector-clickhose"
+
+[clickhose.properties.addr]
+title = "Foo"
+description = "Foo"
+type = "string"
